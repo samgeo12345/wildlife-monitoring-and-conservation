@@ -1,5 +1,5 @@
 import cv2
-video_path = "videos/elephant.mp4"
+video_path = "videos/cheetah.mp4"
 shootvideo = cv2.VideoCapture(video_path)
 fgbg = cv2.createBackgroundSubtractorMOG2()
 while shootvideo.isOpened():
@@ -8,9 +8,10 @@ while shootvideo.isOpened():
         break
     frame = cv2.resize(frame, (800, 450))
     fgmask = fgbg.apply(frame)
+    fgmask = cv2.medianBlur(fgmask,9)
     contours, _ = cv2.findContours(fgmask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     for cnt in contours:
-        if cv2.contourArea(cnt) > 500:
+        if cv2.contourArea(cnt) > 1500:
             x, y, w, h = cv2.boundingRect(cnt)
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
     cv2.imshow('Wildlife Motion Detection', frame)

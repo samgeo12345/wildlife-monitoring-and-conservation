@@ -1,4 +1,4 @@
-# Wildlif-monitoring-and-Conservation-using-opencv
+# Wildlife-monitoring-and-Conservation-using-opencv
 
 ## Tilte
 
