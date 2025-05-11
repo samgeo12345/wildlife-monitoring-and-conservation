@@ -2,21 +2,21 @@
 
 ## Tilte
 
-### Wildlife monitoring and Conservation
+#### Wildlife monitoring and Conservation
 
 ## Usage
 
-### This project helps to find moving animals in a video using a computer program.It is useful for watching animals in the forest without going there.
+#### This project helps to find moving animals in a video using a computer program.It is useful for watching animals in the forest without going there.
 
 ## Code Descripton
 
-### Programming Language: Python
+#### Programming Language: Python
 
 - Python is the High level programming language.
 
 - Python is creted by Van Guido Rossam in the year 1991.
 
-### Packages used: Opencv
+#### Packages used: Opencv
 
 - Opencv stands for Open Source Computer Vision.
 
@@ -54,4 +54,4 @@
 
 ## Conclusion
 
-### This project hepls the forest officers to track animals without being in the wild.It is a simple low-cost solution that can be used in the real-time or with recorded video.
+#### This project hepls the forest officers to track animals without being in the wild.It is a simple low-cost solution that can be used in the real-time or with recorded video.
